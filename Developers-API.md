@@ -1,12 +1,12 @@
 ## Introduction
 
-Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
+Any app can easily scrobble their music through Simple Last.fm Scrobbler (SLS). Just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
 
-You just have to implement the behavior below, and it should just work. 
+Implement the behavior below, and it should just work. Or, if you prefer, email me some specifications on the notifications your app sends and I'll implement directly into SLS.
 
-I'd appreciate it if you'd send an email to [simple.lfm.scrobbler@gmail.com](mailto:simple.lfm.scrobbler@gmail.com ) and tell me about any apps using this API. That way I can add them to the list of supported apps. Any questions are always welcome.
+If you use this API you could send me an email, [simple.lfm.scrobbler@gmail.com](mailto:simple.lfm.scrobbler@gmail.com), and tell me about your app. That way I can add it to the list of supported apps.
 
-If you have any questions about this API, or suggestions on how to improve it, I'd be happy to consider them.
+If you have any questions about this API, or suggestions on how to improve it, I'd be happy help or discuss it with you.
 
 ## Details
 
