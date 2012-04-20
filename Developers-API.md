@@ -25,24 +25,27 @@ The intent your app broadcast must contain one of these states:
 
 The possible fields for the intent (to be put in it's extras bundle) are:
 
-|| Name || Type || Required || Content ||
-|| *app-name* || *String* || *Yes* || *The name of the music app.* ||
-|| *app-package* || *String* || *Yes* || *The package of the music app.* ||
-|| *state* || *int* || *Yes* || *One of the states above.* ||
-|| *artist* || *String* || *Yes* || *The artist name.* || 
-|| album || String || No || The album name. _Strongly recommended._ ||
-|| *track* || *String* || *Yes* || *The track name.* ||
-|| *duration* || *int* || *Yes* || *The duration of the track (in seconds).* ||
-|| track-number || int || No || Track number on album. ||
-|| mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz]. ||
-|| source || String || No || How the user listens to the music - see table below. Default is "P". ||
+    | Name         | Type   | Required | Content                                                             |
+    +--------------+--------+----------+---------------------------------------------------------------------+
+    | app-name     | String | Yes      | The name of the music app                                           |
+    | app-package  | String | Yes      | The package of the music app                                        |
+    | state        | int    | Yes      | One of the states above                                             |
+    | album        | String | No       | The album name _Strongly recommended_                               |
+    | artist       | String | Yes      | The artist name                                                     |
+    | track        | String | Yes      | The track name                                                      |
+    | duration     | int    | Yes      | The duration of the track (in seconds)                              |
+    | track-number | int    | No       | Track number on album                                               |
+    | mbid         | String | No       | A Track-ID from <http://musicbrainz.org/doc/TrackID>                |
+    | source       | String | No       | How the user listens to the music, see table below (default is 'P') |
 
 Table of source values:
-|| Value || How the track was chosen ||
-|| "P" || Chosen by the user (the most common value, unless you have a reason for choosing otherwise, use this).  ||
-|| "R" || Non-personalised broadcast (e.g. Shoutcast, BBC Radio 1). ||
-|| "E" || Personalised recommendation except Last.fm (e.g. Pandora, Launchcast). ||
-|| "U" || Source unknown. ||
+
+    | Value | How the track was "chosen"                                                                            |
+    +-------+-------------------------------------------------------------------------------------------------------+
+    | 'P'   | Chosen by the user (the most common value; unless you have a reason for choosing otherwise, use this) |
+    | 'R'   | Non-personalised broadcast (e.g. Shoutcast, BBC Radio 1, etc.)                                        |
+    | 'E'   | Personalised recommendation except Last.fm (e.g. Pandora, Launchcast, etc.)                           |
+    | 'U'   | Source unknown                                                                                        |
 
 These values are taken from the Last.fm [Submissions Protocol Specifiaction, section 3.2](http://www.last.fm/api/submissions#3.2).
 
