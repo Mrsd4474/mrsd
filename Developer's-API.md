@@ -61,27 +61,31 @@ It is not necessary to broadcast with state set to COMPLETE for a track to scrob
 
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
-    Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
-    bCast.putExtra("state", START);
-    bCast.putExtra("app-name", "Example App");
-    bCast.putExtra("app-package", "com.example.exampleapp");
-    bCast.putExtra("artist", "Chris Cornell");
-    bCast.putExtra("album", "Casino Royale");
-    bCast.putExtra("track", "You Know My Name");
-    bCast.putExtra("duration", 244);
-    sendBroadcast(bCast);
+~~~ java
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
+bCast.putExtra("state", START);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
+bCast.putExtra("artist", "Chris Cornell");
+bCast.putExtra("album", "Casino Royale");
+bCast.putExtra("track", "You Know My Name");
+bCast.putExtra("duration", 244);
+sendBroadcast(bCast);
+~~~
 
 And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
 
-    Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
-    bCast.putExtra("state", COMPLETE);
-    bCast.putExtra("app-name", "Example App");
-    bCast.putExtra("app-package", "com.example.exampleapp");
-    bCast.putExtra("artist", "James Marsters");
-    bCast.putExtra("album", "Like A Waterfall");
-    bCast.putExtra("track", "Looking At You");
-    bCast.putExtra("duration", 175);
-    sendBroadcast(bCast);
+~~~ java
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
+bCast.putExtra("state", COMPLETE);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
+bCast.putExtra("artist", "James Marsters");
+bCast.putExtra("album", "Like A Waterfall");
+bCast.putExtra("track", "Looking At You");
+bCast.putExtra("duration", 175);
+sendBroadcast(bCast);
+~~~
 
 This might be if you have a radio app, which just started playing a new track:
 
