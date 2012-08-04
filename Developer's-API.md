@@ -53,9 +53,9 @@ These values are taken from the Last.fm [Submissions Protocol Specifiaction, sec
 
 You should broadcast an intent with the information above whenever the user starts playing a new track (including when it is the next track in a playlist), resumes a paused track or pauses or stops a already playing track. Sending intents at other times (such as when the user is seeking within a track) is unnecessary, but does no harm.
 
-It is not necessary to broadcast with state set to COMPLETE for a track to scrobble^1^; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
+It is not necessary to broadcast with state set to COMPLETE for a track to scrobble*; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
 
-^1^If you play the same track again directly after it has finished playing (e.g. looping a playlist with one track), you have to send a COMPLETE for proper scrobbling.
+*If you play the same track again directly after it has finished playing (e.g. looping a playlist with one track), you have to send a COMPLETE for proper scrobbling.
 
 ## Examples
 
@@ -89,18 +89,20 @@ sendBroadcast(bCast);
 
 This might be if you have a radio app, which just started playing a new track:
 
-    Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
-    bCast.putExtra("state", START);
-    bCast.putExtra("app-name", "Example App");
-    bCast.putExtra("app-package", "com.example.exampleapp");
-    bCast.putExtra("artist", "Yohanna");
-    bCast.putExtra("album", "Eurovision Song Contest: Moscow 2009 (disc 2)");
-    bCast.putExtra("track", "Is It True? (Iceland)");
-    bCast.putExtra("duration", 181);
-    bCast.putExtra("track-number", 3);
-    bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
-    bCast.putExtra("source", "R");
-    sendBroadcast(bCast);
+~~~ java
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
+bCast.putExtra("state", START);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
+bCast.putExtra("artist", "Yohanna");
+bCast.putExtra("album", "Eurovision Song Contest: Moscow 2009 (disc 2)");
+bCast.putExtra("track", "Is It True? (Iceland)");
+bCast.putExtra("duration", 181);
+bCast.putExtra("track-number", 3);
+bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
+bCast.putExtra("source", "R");
+sendBroadcast(bCast);
+~~~
 
 The app ³ (cubed) [implements](http://github.com/fabrantes/rockonnggl/blob/master/src/org/abrantix/rockon/rockonnggl/RockOnNextGenService.java) this API.
 
@@ -140,7 +142,7 @@ SLS aspires to never crash, so if it does, please tell me. Whatever data you sen
 
 ### Other
 
-[Email me](mailto:simple.lfm.scrobbler@gmail.com ), and I'll answer as quickly as I can. Saved `LogCats` can be useful.
+Open an issue here on github and we'll look into an problems you might have. Saved `LogCats` can be useful. You can also send me an [email](mailto:simple.lfm.scrobbler@gmail.com ), and I'll answer as quickly as I can
 
 ## Custom Broadcasts
 
