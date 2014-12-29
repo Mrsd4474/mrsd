@@ -23,7 +23,7 @@ The intent your app broadcast must contain one of these states:
     | PAUSE      |             2 | Playback has been paused for a/the track  |
     | COMPLETE   |             3 | A/The track has finished playing          |
 
-The possible fields for the intent (to be put in it's extras bundle) are:
+The possible fields for the intent (to be put in its extras bundle) are:
 
     | Name         | Type   | Required | Content                                                             |
     +--------------+--------+----------+---------------------------------------------------------------------+
