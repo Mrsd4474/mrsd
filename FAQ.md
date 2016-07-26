@@ -14,6 +14,6 @@ See [the changelog](https://github.com/tgwizard/sls/blob/master/assets/changelog
 For any scrobbling to work, you first have to enter your Last.fm (or Libre.fm) account details into SLS and authenticate. When you've done that, each specific music player might require you to enable scrobbling in their settings. Some players, such as the default players on most phones, work right out-of-the-box.
 
 ## Please support app YY
-I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see ...).
+I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [Developer's API](https://github.com/tgwizard/sls/wiki/Developer's-API)).
 
 But if there is no issue for your app here on the github page, email me or create the issue yourself and I'll get right on it (as soon as I get the time...).
