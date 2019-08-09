@@ -8,7 +8,7 @@ Visit [Last.fm](http://www.last.fm), or see their [FAQ](http://www.last.fm/help/
 No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page.
 
 ## What's new in version XX?
-See [the changelog](https://github.com/tgwizard/sls/blob/master/assets/changelog.txt) for a list of changes.
+See [the changelog](https://github.com/tgwizard/sls/blob/master/app/src/main/assets/changelog.txt) for a list of changes.
 
 ## How to enable scrobbling in a music app
 For any scrobbling to work, you first have to enter your Last.fm (or Libre.fm) account details into SLS and authenticate. When you've done that, each specific music player might require you to enable scrobbling in their settings. Some players, such as the default players on most phones, work right out-of-the-box.
