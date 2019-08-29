@@ -1,3 +1,13 @@
+## First Things First
+
+1. Enable Developer Mode (examples below)
+ * Google Pixel: Settings > System > About phone > Build number
+ * Samsung Galaxy S8 and later: Settings > About phone > Software information > Build number
+ * LG G6 and later: Settings > About phone > Software info > Build number
+ * HTC U11 and later: Settings > About > Software information > More > Build number
+ * OnePlus 5T and later: Settings > About phone > Build number
+2. Press "Build number" usually 10 times fast.
+
 ## Getting Started
 1. Open this link and download the correct tools for your Windows, Mac or Linux machine.
    * [Android Platform Tools with adb (android debug bridge, utility)](https://developer.android.com/studio/releases/platform-tools)
