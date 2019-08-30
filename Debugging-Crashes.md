@@ -27,8 +27,8 @@ transport_id:2
 Remember this you will need to add the flag later.
 
 ## Logging data
- ### For users who have one device connected.
 1. Create the log.txt
+ ### For users who have one device connected.
 ```console
 .\adb logcat -d com.adam.aslfms:V > log.txt
 ```
