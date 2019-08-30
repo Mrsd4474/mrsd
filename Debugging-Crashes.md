@@ -28,15 +28,17 @@ Remember this you will need to add the flag later.
 
 ## Logging data
  ### For users who have one device connected.
+1. Create the log.txt
 ```console
 .\adb logcat -d com.adam.aslfms:V > log.txt
 ```
   ### For users who have multiple devices connected.
 
-.\adb logcat -d com.adam.aslfms:V -t INSERT_TRANSPORT_ID
+.\adb -t INSERT_TRANSPORT_ID logcat -d com.adam.aslfms:V > log.txt 
 ```console
-.\adb logcat -d com.adam.aslfms:V -t 2 > log.txt
+.\adb -t 2 logcat -d com.adam.aslfms:V -t 2 > log.txt
 ```
+2. Find the folder you created the log.txt (should be inside the .\adb folder)
 
 ## Sharing logs
 If you are new and you are sharing debugging information please copy or upload the log.txt file directly to GitHub or somewhere online we can read it.
