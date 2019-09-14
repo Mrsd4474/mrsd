@@ -1,7 +1,10 @@
 ## Notification Listener Privacy Concerns Explained
 
-Note: We are an open source app, we do not collect private information and we do store your private information anywhere except your phone. Your music metadata will be sent to your chosen music metadata service. 
-"We do not share anything except necessary information for Scrobbles or Listens."
+Note
+ * We are an open source app.
+ * We do not collect private information and we store your private information in your phone.
+ * Your music metadata will be sent to your chosen music metadata service. 
+ * "We only share necessary information for Scrobbles or Listens."
 
 **Code Privacy Concerns**
 
