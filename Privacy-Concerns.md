@@ -18,6 +18,8 @@ _[ControllerReceiverCallback.java](https://github.com/simple-last-fm-scrobbler/s
  * Manages the incoming data form your music apps
  * Manages play-state and metadata changes.
 
+### Your Music MetaData
+
  1. [Last.fm Terms of Use](https://www.last.fm/legal/terms)
  2. [Libre.fm Privacy Policy Contact Information](https://gnu.io/contact/)
  3. [ListenBrainz Privacy Policy](https://metabrainz.org/privacy)
