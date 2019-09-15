@@ -1,6 +1,6 @@
 ## Notification Listener Privacy Concerns Explained
 
-Note
+### **FACTS**
  * We are an open source app.
  * We do not collect private information and we store your private information in your phone.
  * Your music metadata will be sent to your chosen music metadata service(s). 
