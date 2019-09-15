@@ -33,4 +33,4 @@ _[ControllerReceiverCallback.java](https://github.com/simple-last-fm-scrobbler/s
 
 ## In Summary
 
-  * Big Sean - I Don't F*** With You
+  * Big Sean - I Don't F*** With You (first few verses)
