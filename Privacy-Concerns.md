@@ -1,5 +1,13 @@
 ## Notification Listener Privacy Concerns Explained
 
+### **Why?**
+#### Old Broadcast Receiver Scrobbling is Broken on Devices using Android Oreo and above.
+
+ * Old Simple (Last.fm) Scrobbler relied heavily on track information Broadcasts aka implicit broadcasts.
+ * [Implicit Broadcast ban on Android Oreo](https://commonsware.com/blog/2017/04/11/android-o-implicit-broadcast-ban.html)
+ * Google does not allow us to [Target SDK 25 or lower anymore](https://android-developers.googleblog.com/2017/12/improving-app-security-and-performance.html)
+ * Hence for devices using (sdk 26) Android 8.0+ Oreo and above we can no longer use implicit broadcasts.
+
 ### **FACTS**
  * We are an open source app.
  * We do not collect private information and we store your private information in your phone.
