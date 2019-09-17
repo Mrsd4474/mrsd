@@ -1,4 +1,6 @@
-## Notification Listener Privacy Concerns Explained
+# Privacy Concerns Explained
+
+## Notification Listener (required for Android 8.0+ Oreo)
 
 ### **Why?**
 #### Old Broadcast Receiver Scrobbling is Broken on Devices using Android Oreo and above.
@@ -38,6 +40,29 @@ _[ControllerReceiverCallback.java](https://github.com/simple-last-fm-scrobbler/s
  2. [Libre.fm Privacy Policy Contact Information](https://gnu.io/contact/)
  3. [ListenBrainz Privacy Policy](https://metabrainz.org/privacy)
 
+## Storage Permissions Explained (Optional)
+
+ * Since Android KitKat [External Storage is required](https://developer.android.com/about/versions/android-4.4#BehaviorStorage) to read music metadata directly from devices before Android Oreo
+
+**Code Privacy Concerns**
+
+_[BuiltInMusicAppReceiver.java](https://github.com/simple-last-fm-scrobbler/sls/blob/master/app/src/main/java/com/adam/aslfms/receiver/BuiltInMusicAppReceiver.java#L220-L272)_
+
+_[ScrobbleDroidMusicReceiver.java](https://github.com/simple-last-fm-scrobbler/sls/blob/master/app/src/main/java/com/adam/aslfms/receiver/ScrobbleDroidMusicReceiver.java#L118-L171)_
+
+ * Both files pull music information directly from the storage device
+
+_[Util.java](https://github.com/simple-last-fm-scrobbler/sls/blob/master/app/src/main/java/com/adam/aslfms/util/Util.java#L521-L544)_
+
+ * Developer tool that exports the database to the file system.
+
+## Battery Optimizations (Optional)
+
+ * Disables service and app auto closing, especially important for users who disable "Active App Notification"
+
+**Code Privacy Concerns**
+
+ * There are no code privacy concerns
 
 ## In Summary
 
