@@ -1,4 +1,4 @@
-# Privacy Concerns Explained
+# Privacy Concerns & Permissions Explained
 
 ## Notification Listener (required for Android 8.0+ Oreo)
 
